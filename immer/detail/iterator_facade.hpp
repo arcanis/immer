@@ -60,9 +60,9 @@ struct iterator_core_access
 template <typename DerivedT,
           typename IteratorCategoryT,
           typename T,
-          typename ReferenceT = T&,
+          typename ReferenceT = T const&,
           typename DifferenceTypeT = std::ptrdiff_t,
-          typename PointerT = T*>
+          typename PointerT = T const*>
 class iterator_facade
     : public std::iterator<IteratorCategoryT,
                            T,
